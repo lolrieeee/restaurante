@@ -1,0 +1,249 @@
+/* GENERAL STUFF
+-------------------------------------------------- */
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'Lobster', cursive;
+  color:#f15a24;
+  font-size:80px;
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  color:#000000;
+  font-weight: bold;
+  margin-top:-12px;
+}
+
+h5 {
+  font-family: 'Raleway', sans-serif;
+  font-size:20px;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.navbar-nav li a {
+  color:#ffffff !important;
+}
+
+.navbar-nav .active a {
+  /* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(0, 0, 0) !important;
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+.navbar-brand {
+}
+
+
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
+.carousel {
+  height: 500px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+.btn-lg {
+  background:#f15a24 !important;
+  border:0 !important;
+}
+
+
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    background:none;
+    border: 0 !important;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+@media (min-width: 992px) {
+}
+
+
+
+
+
+/* STORY
+---------------------------------------*/
+.year {
+  position: absolute;
+}
+
+.yearinfo {
+  position: relative;
+}
+
+
+#story {
+  padding:40px 0 80px;
+}
+
+.year p {
+  font-family: 'Lobster', cursive;
+  color:#dddddd;
+  padding-left:10px;
+  font-size:150px;
+}
+
+
+
+
+
+/* REVIEWS
+-------------------------------------------------- */
+#reviews {
+  background-image: url(../img/food_review.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding:100px 0;
+}
+
+.bee {
+  /* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(0, 0, 0) !important;
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+    padding:20px 60px 40px;
+}
+
+.bee p {
+  color:#ffffff;
+}
+
+
+
+
+
+/* MENU
+-------------------------------------------------- */
+#menu {
+  background: url(../img/black_linen.png);
+  padding:50px 0 100px 0;
+}
+
+.menu-links, .nav-tabs .active {
+  font-family: 'Raleway', sans-serif;
+  color:#f15a24 !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-border-radius: 0 !important;
+   -moz-border-radius: 0 !important;
+        border-radius: 0 !important;
+}
+
+.tab-content {
+  padding-top:20px;
+  background-color:#ffffff;
+  height:500px;
+}
+
+
+
+
+
+/* CONTACT PAGE
+-------------------------------------------------- */
+#contact {
+  background:#f15a24;
+  color:#ffffff;
+  padding:40px 0;
+}
+
+.contact-white {
+  color:#ffffff;
+}
+
+.contact-name {
+  font-family: 'Raleway', sans-serif;
+}
